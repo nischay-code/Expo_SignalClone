@@ -48,7 +48,7 @@ expo start
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
 📬 Contact
-For any inquiries, please contact [nischay0602@gmail.com].
+For any inquiries, please contact nischay0602@gmail.com.
 
 ## 😊 Happy Coding! 😊
 
