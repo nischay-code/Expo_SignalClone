@@ -18,14 +18,14 @@ const RegisterScreen = ({ navigation }) => {
   }, [navigation]);
 
   const register = () => {
-  auth
+    auth
       .createUserWithEmailAndPassword(email, password)
       .then((authUser) => {
         authUser.user.updateProfile({
           displayName: name,
           photoURL:
             imageUrl ||
-            "https://cencup.com/wp-content/uploads/2019/07/avatar-placeholder.png",
+            "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png",
         });
       })
       .catch((error) => alert(error.message));

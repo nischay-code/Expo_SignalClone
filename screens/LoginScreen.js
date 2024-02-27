@@ -15,17 +15,26 @@ const LoginScreen = ({ navigation }) => {
         navigation.replace("Home");
       }
     });
-    return unsubscribe;
+
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
-  const signIn = () => {};
+  const signIn = async () => {
+    try {
+      await auth.signInWithEmailAndPassword(email, password);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <KeyboardAvoidingView behavior="margin" style={styles.container}>
       <StatusBar style="light" />
       <Image
         source={{
-          uri: "https://blog.mozilla.org/internetcitizen/files/2018/08/signal-logo.png",
+          uri: "https://cdn2.downdetector.com/static/uploads/logo/Signal_Blue_logo.png",
         }}
         style={{ width: 200, height: 200 }}
       />
