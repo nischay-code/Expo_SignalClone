@@ -17,8 +17,8 @@ Make sure you have [Node.js](https://nodejs.org/) and [Expo CLI](https://docs.ex
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/signal-clone.git
-cd signal-clone
+git clone git@github.com:nischay-code/ReactNative_Expo_SignalClone.git
+cd ReactNative_Expo_SignalClone
 ```
 
 2. Install dependencies:
